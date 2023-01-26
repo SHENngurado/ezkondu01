@@ -1,0 +1,84 @@
+.menu li a::before {
+  background: #33d782 none repeat scroll 0 0;
+}
+.menu li.current-menu-item a {
+  color: #33d782;
+}
+.menu li a:hover {
+    color: #33d782;
+    text-decoration: underline;
+}
+.fa-pencil-square-o {
+    background: #33d782;
+}
+.fa-pencil-square-o:hover {
+    color: #33d782;
+}
+.welcome-text span {
+    color: #33d782;
+}
+h2.content-title,
+h2.content-subtitle {
+    color: #33d782;
+}
+.farm-home-slider-area .slick-prev.fa.fa-angle-left.slick-arrow, .farm-home-slider-area .slick-next.fa.fa-angle-right.slick-arrow{
+	color: #33d782;
+}
+.slick-next.fa.fa-angle-right.slick-arrow:hover,
+.slick-prev.fa.fa-angle-left.slick-arrow:hover {
+    background: #33d782;
+}
+.farm-about-us .contact-botton a {
+    background: #33d782;
+	box-shadow: 7px 7px 0 #d6f7e6;
+}
+.product-select .col-sm-6:nth-child(odd) .farm-single-product:hover {
+    border: 2px solid #33d782
+}
+.product-select .col-sm-6:nth-child(even) .farm-single-product:hover {
+    border-color: #33d782
+}
+.hover-product a {
+    background: #33d782 none repeat scroll 0 0;
+    -webkit-box-shadow: 8px 8px 0px rgba(51, 215, 130, 0.2);
+    -moz-box-shadow: 8px 8px 0px rgba(51, 215, 130, 0.2);
+    box-shadow: 8px 8px 0px rgba(51, 215, 130, 0.2);
+}
+.panel-heading a::before {
+    background: #33d782;
+}
+.contact-botton a:hover {
+    background: #33d782 none repeat scroll 0 0;
+}
+.farm-about-us .contact-botton a {
+    background: #33d782;
+}
+.farm-price-content h4 a {
+    color: #33d782;
+}
+.farm-project-nav li:hover,
+.farm-project-nav li.active {
+    color: #33d782;
+}
+.project-weight {
+    background: #33d782 none repeat scroll 0 0;
+}
+.single-client-btn a.client-btn {
+    background: #33d782 none repeat scroll 0 0;
+}
+.single-client-btn a.client-btn:hover {
+    color: #33d782;
+}
+.single-contact:hover p {
+    color: #33d782;
+}
+.single-submit input {
+    background: #33d782 none repeat scroll 0 0;
+    box-shadow: 5px 5px 0 #335443;
+}
+.single-submit input:hover {
+    color: #33d782;
+}
+.scrollToTop {
+	background: #33d782;
+}

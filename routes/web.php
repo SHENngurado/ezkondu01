@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProveedoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +18,32 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
+
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/admindashboard', function () {
+        return view('admin.dashboard');
+    })->name('admindashboard');
+});
+
+
+
+//PROVEEDORES
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/newcliente', function () {
+        return view('admin.empresas.newcliente');
+    })->name('newcliente');
+});
+
+Route::post('/newclienteguardar/', [ProveedoresController::class, 'newclienteguardar'])->middleware('auth');
+

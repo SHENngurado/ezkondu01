@@ -228,7 +228,7 @@
                             <div class="panel">
                                 <div class="card-header" role="tab" id="headingThree">
                                     <h4 class="card-title">
-                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Cómo puedo encontrar videos 360?</a>
+                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Cómo puedo tener mi boda en video360?</a>
                                   </h4>
                               </div>
                               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
@@ -241,13 +241,13 @@
                     <div class="panel">
                         <div class="card-header" role="tab" id="headingFour">
                             <h4 class="card-title">
-                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">Un ejemplo rapido</a>
+                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">Un ejemplo de boda en video360</a>
                            </h4>
                        </div>
                        <div id="collapsefour" class="panel-collapse collapse" role="tabpanel"
                        aria-labelledby="headingFour">
                        <div class="card-body">
-                        <a href="https://www.youtube.com/watch?v=QKm-SOOMC4c&t=35s&ab_channel=3DVR360VIDEOS" target=”_blank”>Best VR 360 Video (Virtual Reality)</a>
+                        <a href="https://www.youtube.com/watch?v=QKm-SOOMC4c&t=35s&ab_channel=3DVR360VIDEOS" target=”_blank”>Ane y Aitor 2023</a>
                     </div>
                 </div>
             </div>

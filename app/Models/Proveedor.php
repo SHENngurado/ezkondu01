@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Proveedor extends Model
 {
     use HasFactory;
-}
+
 
 protected $fillable = [
         'nombre','correo','direccion','telefono','desc_01','desc_02','desc_03','tipo','google_api_url','poblacion'
@@ -26,3 +26,4 @@ protected $fillable = [
     public function servicios(){
                 return $this->hasMany('App\Models\Servicio', 'proveedor_id');
     }
+}

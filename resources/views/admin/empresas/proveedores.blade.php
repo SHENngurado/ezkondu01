@@ -1,5 +1,10 @@
 <!-- component -->
   <x-app-layout>
+    <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
+      <div>
+        <a href="{!! url('/admindashboard'); !!}">Administrar</a>
+      </div>
+    </div>
 
   <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -46,17 +51,17 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($clientes as $cliente)
+                @foreach($proveedores as $proveedor)
                 <tr class="bg-white border-b">
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><a href="{{ url('/infocliente') }}/{!!$cliente->id!!}">{!!$cliente->nombre!!} {!!$cliente->apellido!!}</a></td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><a href="{{ url('/infoproveedor') }}/{!!$proveedor->id!!}">{!!$proveedor->nombre!!}</a></td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    {!!$cliente->telefono!!}
+                    {!!$proveedor->telefono!!}
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    {!!$cliente->correo!!}
+                    {!!$proveedor->correo!!}
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    <a href="{{ url('/editcliente') }}/{!!$cliente->id!!}" class="button">editar</a>
+                    <a href="{{ url('/editproveedor') }}/{!!$proveedor->id!!}" class="button">editar</a>
                   </td>
                 </tr class="bg-white border-b">
                 @endforeach

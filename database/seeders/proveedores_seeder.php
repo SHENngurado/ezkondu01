@@ -20,6 +20,7 @@ class proveedores_seeder extends Seeder
             'nombre' => 'Restaurante Erreka',
             'correo' => 'errekapaisaje@jpg.com', 
             'direccion' => 'Calle pescaderia n12',
+            'cod_postal' => '20017',
             'telefono' => '616379241',
             'desc_01' => 'En la localidad de Los Alcazares este restaurante puede ser el marco perfecto para celebrar vuestro banquete nupcial junto a vuestros familiares y amigos. Es un entorno privilegiado rodeado de naturaleza con exclusivas instalaciones y donde recibiréis un servicio y trato totalmente profesional y comprometido.',
             'desc_02' => 'Una de las zonas a destacar es la espectacular terraza con vistas al increíble campo de golf. También podréis hacer uso del mismo campo, que se ha utilizado ya previamente en otras bodas para la celebración o el cóctel de bienvenida. Y si queréis un banquete en el interior, cuentan con un salón de celebraciones.',
@@ -27,6 +28,11 @@ class proveedores_seeder extends Seeder
             'tipo' => 'Restaurante',
             'google_api_url' => '1',
             'poblacion' => 'San Pedro',
+            'contacto_nombre' => 'Javier Segurado',
+            'contacto_telefono' => '646482606',
+            'contacto_correo' => 'javier@falsemail.com',
+            'cifdni' => '72484842C',
+            'fotoperfil' => 'invent.jpg',
         ]);
     }
 }

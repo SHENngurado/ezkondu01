@@ -26,6 +26,12 @@ class CreateProveedorsTable extends Migration
             $table->string('tipo');
             $table->string('google_api_url');
             $table->string('poblacion');
+            $table->string('cod_postal');
+            $table->string('contacto_nombre');
+            $table->string('contacto_telefono');
+            $table->string('contacto_correo');
+            $table->string('cifdni');
+            $table->string('fotoperfil');
         });
     }
 

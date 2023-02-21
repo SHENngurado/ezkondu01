@@ -11,7 +11,7 @@ class Proveedor extends Model
 
 
 protected $fillable = [
-        'nombre','correo','direccion','telefono','desc_01','desc_02','desc_03','tipo','google_api_url','poblacion'
+        'nombre','correo','direccion','telefono','desc_01','desc_02','desc_03','tipo','google_api_url','poblacion', 'cifdni', 'contacto_nombre', 'contacto_telefono', 'contacto_correo', 'fotoperfil', 'cod_postal'
     ];
 
     public function preguntas(){

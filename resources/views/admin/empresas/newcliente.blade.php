@@ -1,4 +1,9 @@
 <x-app-layout>
+  <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
+      <div>
+        <a href="{!! url('/admindashboard'); !!}">Administrar</a>
+      </div>
+    </div>
   <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-6 py-4">
@@ -14,17 +19,17 @@
                   <nav>
                     <ul>
                       <li><input type="text" name="nombre" value="" placeholder="Nombre" required/></li>
-                      {{--<li><input type="text" name="cifdni" value="" placeholder="CIF/DNI" required/></li>--}}
+                      <li><input type="text" name="cifdni" value="" placeholder="CIF/DNI" required/></li>
                       <li><input type="text" name="telefono" value="" placeholder="Telefono" required/></li>
                       <li><input type="text" name="correo" value="" placeholder="Correo" /></li>
                     <br>
                       <li><input type="text" name="direccion" value="" placeholder="direccion" /></li>
-                      {{--<li><input type="text" name="cod_postal" value="" placeholder="Cod. Postal" /></li>--}}
+                      <li><input type="text" name="cod_postal" value="" placeholder="Cod. Postal" /></li>
                       <li><input type="text" name="poblacion" value="" placeholder="poblacion" /></li>
                     <br>
-                      {{--<li><input type="text" name="contacto_nombre" value="" placeholder="contacto_nombre" /></li>--}}
-                      {{--<li><input type="text" name="contacto_correo" value="" placeholder="contacto_correo" /></li>--}}
-                      {{--<li><input type="text" name="contacto_telefono" value="" placeholder="contacto_telefono" /></li>--}}
+                      <li><input type="text" name="contacto_nombre" value="" placeholder="contacto_nombre" /></li>
+                      <li><input type="text" name="contacto_correo" value="" placeholder="contacto_correo" /></li>
+                      <li><input type="text" name="contacto_telefono" value="" placeholder="contacto_telefono" /></li>
                     <br> 
                       <li><input type="text" name="desc_01" value="" placeholder="desc_01" /></li>
                       <li><input type="text" name="desc_02" value="" placeholder="desc_02" /></li>

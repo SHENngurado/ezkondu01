@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProveedoresController;
+use App\Http\Controllers\adminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,4 +47,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 });
 
 Route::post('/newclienteguardar/', [ProveedoresController::class, 'newclienteguardar'])->middleware('auth');
-
+Route::get('/verproveedores/', [adminController::class, 'verproveedores'])->middleware('auth');
+Route::get('/infoproveedor/{proveedor_id}', [adminController::class, 'infoproveedor'])->middleware('auth');
+Route::get('/editproveedor/{proveedor_id}', [adminController::class, 'editproveedor'])->middleware('auth');
+Route::post('/editproveedorguardar/', [adminController::class, 'editproveedorguardar'])->middleware('auth');

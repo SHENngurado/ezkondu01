@@ -11,3 +11,19 @@
   margin-right: auto;
   width: 50%;
 }
+
+.centrardivs {
+  text-align: left; 
+  margin: auto; 
+  width: 250px;
+}
+
+.multimedia {
+  text-align: left; 
+  margin: auto; 
+  width: 400px;
+}
+
+.elespacionero{
+  padding: 15px;
+}

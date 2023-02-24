@@ -36,6 +36,10 @@
     <link rel="stylesheet" href="{{ asset('farmhouse/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('farmhouse/slick/slick-theme.css') }}">
 
+    <!-- datatimepicker -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('datetimepicker/css/bootstrap-datetimepicker.min.css') }}">
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -77,5 +81,13 @@
     <script src="{{ asset('farmhouse/js/wow-1.3.0.min.js') }}" defer></script>
     <script src="{{ asset('farmhouse/slick/slick.min.js') }}" defer></script>
     <script src="{{ asset('farmhouse/js/main.js') }}" defer></script>
+
+    <!-- Datetimepicker -->
+    <script src="{{ asset('datetimepicker/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('datetimepicker/js/popper.js') }}"></script>
+    <script src="{{ asset('datetimepicker/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('datetimepicker/js/moment-with-locales.min.js') }}"></script>
+    <script src="{{ asset('datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
+    <script src="{{ asset('datetimepicker/js/main.js') }}"></script>
 </body>
 </html>

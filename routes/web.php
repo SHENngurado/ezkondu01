@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProveedoresController;
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\anunciantesController;
+use App\Http\Controllers\sorteosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,3 +66,17 @@ Route::get('/deleteservicio/{proveedor_id}/{servicio_id}', [adminController::cla
 Route::get('/multimediaproveedor/{proveedor_id}', [adminController::class, 'multimediaproveedor'])->middleware('auth');
 Route::post('/annadirfoto/', [adminController::class, 'annadirfoto'])->middleware('auth');
 Route::get('/deletefoto/{proveedor_id}/{foto_id}', [adminController::class, 'deletefoto'])->middleware('auth');
+
+//admin anunciantes
+Route::get('/anunciantes/', [anunciantesController::class, 'anunciantes'])->middleware('auth');
+Route::post('/annadiranunciante/', [anunciantesController::class, 'annadiranunciante'])->middleware('auth');
+Route::get('/deleteanunciante/{anunciante_id}', [anunciantesController::class, 'deleteanunciante'])->middleware('auth');
+
+//sorteos
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/mainsorteos', function () {
+        return view('admin.sorteos.mainsorteos');
+    })->name('sorteos');
+});
+Route::post('/fechainiciosorteo/', [sorteosController::class, 'fechainiciosorteo'])->middleware('auth');
+Route::post('/fechafinsorteo/', [sorteosController::class, 'fechafinsorteo'])->middleware('auth');

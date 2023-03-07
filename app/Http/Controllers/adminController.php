@@ -60,12 +60,13 @@ class adminController extends Controller
         $proveedor=Proveedor::find($proveedor_id);
         $preguntas=Pregunta::where('proveedor_id', $proveedor_id)->get();
         $servicios=Servicio::where('proveedor_id', $proveedor_id)->get();
-        //$multimedia=Multimedia::where('proveedor_id', $proveedor_id)->get();
+        $fotos=Foto::where('proveedor_id', $proveedor_id)->get();
         return view('admin.empresas.infoproveedor')->with([
             //'multimedia'=>$multimedia,
             'proveedor'=>$proveedor,
             'preguntas'=>$preguntas,
             'servicios'=>$servicios,
+            'fotos'=>$fotos,
         ]);
     }
 

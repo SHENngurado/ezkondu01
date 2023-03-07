@@ -41,7 +41,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 
-//PROVEEDORES
+//ADMIN
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/newcliente', function () {
         return view('admin.empresas.newcliente');
@@ -80,3 +80,33 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 });
 Route::post('/fechainiciosorteo/', [sorteosController::class, 'fechainiciosorteo'])->middleware('auth');
 Route::post('/fechafinsorteo/', [sorteosController::class, 'fechafinsorteo'])->middleware('auth');
+Route::post('/premiado/', [sorteosController::class, 'premiado'])->middleware('auth');
+
+Route::get('/mostrarpremiados/', [sorteosController::class, 'mostrarpremiados'])->middleware('auth');
+
+Route::get('/infopremiado/{premiado_id}', [sorteosController::class, 'infopremiado'])->middleware('auth');
+Route::post('/editpremiadoguardar/', [sorteosController::class, 'editpremiadoguardar'])->middleware('auth');
+Route::post('/editnotaboda/', [sorteosController::class, 'editnotaboda'])->middleware('auth');
+Route::get('/deletenotaboda/{premiado_id}/{notaboda_id}', [sorteosController::class, 'deletenotaboda'])->middleware('auth');
+Route::post('/annadirnotaboda/', [sorteosController::class, 'annadirnota'])->middleware('auth');
+
+
+//sorteos
+Route::get('/proveedores/', [ProveedoresController::class, 'proveedores'])->middleware('auth');
+
+
+//PUBLICO
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/tuboda', function () {
+        return view('tuboda');
+    })->name('tuboda');
+});
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/360', function () {
+        return view('360');
+    })->name('360');
+});
+
+//ESTADISTICAS
+
+Route::get('/estadisticas/', [estadisticasController::class, 'estadisticas'])->middleware('auth');

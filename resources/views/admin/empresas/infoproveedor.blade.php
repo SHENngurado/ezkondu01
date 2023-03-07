@@ -124,13 +124,13 @@
                 <div class="max-w-2xl mx-auto">
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <div class="container">
-                          <div class="row">
-                            @foreach($servicios as $servicio)
-                                <div class="col-sm">
-                                    1/9
+                            <div class="row Multimedia">
+                            @foreach($fotos as $foto)
+                                <div class="col-sm-6 col-md-4 col-lg-3 item elespacionero">
+                                    <img class="text-center centrado" style="width:200px;" src="{{ Storage::url($foto->url) }}">
                                 </div>
                             @endforeach
-                      </div>
+                        </div>
                   </div>
               </div>
           </div>

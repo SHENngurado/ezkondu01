@@ -1,38 +1,22 @@
 <x-app-layout>
-    <div class="">
-        <div class="">
             <!-- product area start -->
-            <section id="product" class="farm-latest-products">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="farm-section-title">
-                                <h2 class="section-title">Proveedores y Servicios</h2>
-                                <h4>ver todos</h4><a href="">ver todos</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="farm-product-slider">
-                        <div class="row product-select">
-                            <div class="col-md-6">
-                                <div class="farm-single-product">
-                                    <div class="single-product">
-                                        <img src="{{URL::asset('/img/farmhouse/latest-products/product-1.png')}}" alt="">
-                                    </div>
-                                    <div class="product-free">
-                                        <p style="color: white;">Garage Erreka</p>
-                                    </div>
-                                    <div class="hover-product"><a href="#">See Product</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
+                    <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-3 fixed-column">
+                            <!-- Aquí irá el contenido de la columna izquierda -->
+                            <div class="list-group">
+                              <a href="" class="list-group-item">Vínculo 1</a>
+                              <a href="" class="list-group-item">Vínculo 2</a>
+                              <a href="" class="list-group-item">Vínculo 3</a>
+                              <!-- Agrega más vínculos aquí si lo deseas -->
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-9 scrollable-content">
+                        <!-- Aquí irá el contenido de la columna derecha -->
+                        <h2>Columna con scroll a la derecha</h2>
+                        <p>Este contenido puede ser más largo y se desplazará si la pantalla no es lo suficientemente grande.</p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </div>
+            </div>
 </x-app-layout>
 

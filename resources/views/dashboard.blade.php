@@ -9,9 +9,7 @@
                     <div class="col-md-6">
                         <div class="farm-about-content">
                             <h2 class="content-title">Ezkondu Gipuzkoan</h2>
-                            <div class="contact-botton text-center wow zoomIn">
-                                <a href="#">Hasi</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -27,7 +25,7 @@
                                 <div class="col-12 text-center">
                                     <div class="farm-section-title">
                                         <h2 class="section-title">Proveedores y Servicios</h2>
-                                        <h4>ver todos</h4><a href="">ver todos</a>
+                                        <a href="">ver todos</a>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +232,7 @@
                               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
                               aria-labelledby="headingThree">
                               <div class="card-body">
-                                Lo mas fácil es poner en <a href="https://www.youtube.com/"target=”_blank”>Youtube</a> la clave <a href="https://www.youtube.com/results?search_query=%23360"target=”_blank”>#360</a> y disfrutar.
+                                Apuntate <a href="https://www.youtube.com/"target=”_blank”>aqui</a> para obtenerlo completamente gratis  o busca en nuestros <a href="https://www.youtube.com/results?search_query=%23360"target=”_blank”>proveedores</a> y a disfrutar.
                             </div>
                         </div>
                     </div>
@@ -257,7 +255,7 @@
 </div>
 <div class="col-md-6">
     <div class="tometo-man wow zoomIn">
-        <img src="{{URL::asset('/img/farmhouse/faq-right.png')}}" alt="">
+        <img src="{{URL::asset('/img/mujergafasvr.jpg')}}" alt="">
     </div>
 </div>
 </div>
